@@ -44,16 +44,55 @@ interface Person {
 }
 
 const personList: Person[] = [
-    {id: 1, gender: 'male', weight: 15, height: 15 },
-    {id: 2, gender: 'female', weight: 12, height: 12 },
+  { id: 1, gender: 'male', weight: 15, height: 15 },
+  { id: 2, gender: 'female', weight: 12, height: 12 },
 ];
 
-const newList = [...personList]
-newList[0].weight = 12
+const newList = [...personList];
+newList[0].weight = 12;
 console.log(personList[0].weight);
 
 // swap 2 items
 let abc = 5;
 let def = 10;
-[def, abc] = [abc, def]
+[def, abc] = [abc, def];
 
+// destructuring parameters
+// ver 1
+function createStudent(student: { id: number; username: string; age: number }) {
+  const { id, username, age } = student;
+}
+
+createStudent({
+  id: 1,
+  username: 'Thien',
+  age: 12,
+});
+
+// ver 2
+function callAnimal({ id, name, age }: { id: number; name: string; age: number }) {
+  console.log(id, name, age);
+}
+
+callAnimal({
+  id: 1,
+  name: 'cat',
+  age: 1.3,
+});
+
+// ver 3
+interface Department {
+  id: number;
+  name: string;
+  floor: number;
+}
+
+function callDepartment({ id, name, floor }: Department) {
+  console.log(id, name, floor);
+}
+
+callDepartment({
+  id: 3,
+  name: 'tower',
+  floor: 3,
+} as Department);
