@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "typescript": "^4.6.3"
+  },
+  "name": "Typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/dothien126/Typescript.git",
+  "author": "dothien126 <dothien2601ak39@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^17.0.25",
+    "ts-lib": "^0.0.5",
+    "ts-node": "^10.7.0"
+  },
+  "scripts": {
+    "start": "ts-node index.ts"
+  }
+}
