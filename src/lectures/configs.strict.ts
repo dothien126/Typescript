@@ -22,8 +22,8 @@ const studentList: Student[] = [
   { id: 2, name: 'Bob', gender: 'male', age: 20 },
 ];
 
-const bob = findStudentById(studentList, 2)
-console.log(bob.name);
+const bob = findStudentById(studentList, 2);
+console.log(bob);
 
 // alwaysStrict
 // ...
