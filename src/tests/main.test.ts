@@ -1,4 +1,4 @@
-import { isPositive } from "./main";
+import { isPositive } from "../lectures/main";
 
 describe('isPositive()', () => {
     it('should return true when n > 0', () => {
